@@ -68,12 +68,48 @@ Projekte, die
 * stark an den Vorgaben von Django vorbeigehen würde
 
 
-diverese Anwendungsbeispiele
-============================
+Projektbeispiele
+================
 
-* Moin2 -- verwendet vieles aus der Flask/Jinja/Werkzeug-Welt
-* Disqus -- Kommentarsystem mit echten vielen Nutzern
-* Ergebnisprotokollbackend für 1Mio+ Seitenaufrufe/Tag (mit Redis)
+Moinmoin 2
+----------
+
+* Wiki mit primärem Dateibackend / keine "Datenbank"
+* Version 1 hatte alles selbstentwickelt
+* Version 2 verwendet bewährte Komponenten
+* braucht weitere Entwickler für Version 2
+* http://moinmo.in/
+
+Webbib
+------
+
+* Weboberfläche für Bibliographie-Daten
+* entwickelt an dem Wochenende nachdem Flask von Armin Romnacher vorgestellt wurde im Jahre 2010
+* keine "Datenbank" / läd Daten beim ersten Request; ab dann aus dem RAM durch g-object
+* https://github.com/mfa/webbib
+
+weight-app
+----------
+
+* Tracking des eigenen Gewichts
+* Pushen des Gewichts zu fitbit
+* Versuch Datenbank/Nutzerverwaltung auch mit Flask zu machen
+* würde ich heute in Django schreiben
+* https://github.com/mfa/weight-app
+
+einfache Endpoints für Arduino-HTTP-POST
+----------------------------------------
+
+::
+
+  @app.route('/input/', methods=['POST', 'GET'])
+  def inputx():
+    if request.headers.get('X-ApiKey') != 'INSERT RANDOM KEY HERE':
+      abort(403)
+    if request.method == 'POST':
+      log_to_file(request.data)
+      log_to_rrd(request.data)
+    return "OK"
 
 
 Was nun? Flask oder Django
