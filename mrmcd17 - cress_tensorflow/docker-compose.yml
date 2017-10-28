@@ -1,0 +1,6 @@
+main:
+  build: .
+  volumes:
+    - .:/opt/code
+  ports:
+    - 1948:1948
