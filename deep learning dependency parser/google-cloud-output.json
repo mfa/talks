@@ -1,0 +1,263 @@
+{
+  "sentences": [
+    {
+      "text": {
+        "content": "Die Ärmel der Strickjacke haben am Armabschluss ein Bündchen.",
+        "beginOffset": -1
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "text": {
+        "content": "Die",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "DET",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "NOMINATIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "MASCULINE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 1,
+        "label": "DET"
+      },
+      "lemma": "Der"
+    },
+    {
+      "text": {
+        "content": "Ärmel",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "NOUN",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "NOMINATIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "MASCULINE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 4,
+        "label": "NSUBJ"
+      },
+      "lemma": "Ärmel"
+    },
+    {
+      "text": {
+        "content": "der",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "DET",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "GENITIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "FEMININE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 3,
+        "label": "DET"
+      },
+      "lemma": "der"
+    },
+    {
+      "text": {
+        "content": "Strickjacke",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "NOUN",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "GENITIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "FEMININE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 1,
+        "label": "UNKNOWN"
+      },
+      "lemma": "Strickjacke"
+    },
+    {
+      "text": {
+        "content": "haben",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "VERB",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "CASE_UNKNOWN",
+        "form": "FORM_UNKNOWN",
+        "gender": "GENDER_UNKNOWN",
+        "mood": "INDICATIVE",
+        "number": "PLURAL",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "PRESENT",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 4,
+        "label": "ROOT"
+      },
+      "lemma": "haben"
+    },
+    {
+      "text": {
+        "content": "am",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "ADP",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "DATIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "MASCULINE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 4,
+        "label": "PREP"
+      },
+      "lemma": "am"
+    },
+    {
+      "text": {
+        "content": "Armabschluss",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "NOUN",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "DATIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "MASCULINE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 5,
+        "label": "POBJ"
+      },
+      "lemma": "Armabschluss"
+    },
+    {
+      "text": {
+        "content": "ein",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "DET",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "CASE_UNKNOWN",
+        "form": "FORM_UNKNOWN",
+        "gender": "MASCULINE",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 8,
+        "label": "DET"
+      },
+      "lemma": "ein"
+    },
+    {
+      "text": {
+        "content": "Bündchen",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "NOUN",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "NOMINATIVE",
+        "form": "FORM_UNKNOWN",
+        "gender": "NEUTER",
+        "mood": "MOOD_UNKNOWN",
+        "number": "SINGULAR",
+        "person": "THIRD",
+        "proper": "PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 4,
+        "label": "DOBJ"
+      },
+      "lemma": "Bündchen"
+    },
+    {
+      "text": {
+        "content": ".",
+        "beginOffset": -1
+      },
+      "partOfSpeech": {
+        "tag": "PUNCT",
+        "aspect": "ASPECT_UNKNOWN",
+        "case": "CASE_UNKNOWN",
+        "form": "FORM_UNKNOWN",
+        "gender": "GENDER_UNKNOWN",
+        "mood": "MOOD_UNKNOWN",
+        "number": "NUMBER_UNKNOWN",
+        "person": "PERSON_UNKNOWN",
+        "proper": "NOT_PROPER",
+        "reciprocity": "RECIPROCITY_UNKNOWN",
+        "tense": "TENSE_UNKNOWN",
+        "voice": "VOICE_UNKNOWN"
+      },
+      "dependencyEdge": {
+        "headTokenIndex": 4,
+        "label": "P"
+      },
+      "lemma": "."
+    }
+  ],
+  "language": "de"
+}
