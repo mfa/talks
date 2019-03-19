@@ -1,0 +1,12 @@
+## AllenNLP Intro
+
+Talk at [machine learning group stuttgart](http://mlugs.de) 2019-03
+
+
+### Show slides
+
+```
+python -m http.server 8000
+```
+
+goto: http://localhost:8000
