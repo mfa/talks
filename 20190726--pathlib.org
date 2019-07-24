@@ -1,0 +1,117 @@
+# Local variables:
+# after-save-hook: org-html-export-to-html
+# end:
+#+TITLE: Pathlib
+#+AUTHOR: Andreas Madsack (mfa)
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil
+#+OPTIONS: num:2
+
+* Pathlib
+
+** me
+
+- Andreas Madsack (mfa)
+- Python-Evangelist @AX-Semantics
+
+** about pathlib
+
+os.path in better, cleaner und more fun to use.
+
+** Examples
+
+#+BEGIN_SRC python
+from pathlib import Path
+
+base = Path("/tmp")
+print(filename.exists())
+print(filename.is_dir())
+print(filename.is_file())
+
+# instead of os.path.join:
+filename = base / "file.ext"
+print(filename.exists())
+
+# parts
+print(filename.parts)
+
+# drive / root (for windows or shares)
+print(filename.drive)
+print(filename.root)
+
+# extensions / basename
+print(filename.suffix)
+print(filename.suffixes)
+print(filename.stem)
+
+filename.touch()
+# instead of os.path.exists(filename)
+print(filename.exists())
+
+# works with everything in the standard library (Python 3.6+)
+with open(filename, "w") as fp:
+    fp.write("hello world!")
+
+# and can even open files directly
+print(filename.open().readline())
+
+# delete (empty) directories
+path = Path("/tmp/example/deeper")
+if path.exists() and path.is_dir():
+    path.rmdir()
+    if path.parent.exists() and path.parent.is_dir():
+        path.parent.rmdir()
+
+# create directory
+path.mkdir(parents=True, exist_ok=False)
+path.mkdir(parents=True, exist_ok=True)
+
+
+#+END_SRC
+
+** advanced Examples
+
+#+BEGIN_SRC python
+from pathlib import Path
+import os.path
+
+# current path
+Path.cwd()
+
+# home
+Path.home()
+
+# get relative path to home
+os.path.relpath(Path.home())
+
+# get path of current open python file (doesn't work in python shell!)
+Path(__file__).resolve().parent
+
+#+END_SRC
+
+** globbing Examples
+
+no need for the =glob= module anymore
+
+#+BEGIN_SRC python
+from pathlib import Path
+
+path = Path.home() / "tmp/SR19/T1-train"
+for fn in sorted(path.glob("*.conllu")):
+    lines = len(fn.open().readlines())
+    print(f"{fn}: {lines} lines")
+
+# and even recursive with rglob
+path = Path.home() / "tmp/SR19"
+for fn in sorted(path.rglob("*.conllu")):
+    print(fn)
+#+END_SRC
+
+
+
+** further links
+
+- https://docs.python.org/3/library/pathlib.html
+- https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/
+- https://treyhunner.com/2019/01/no-really-pathlib-is-great/
+- https://realpython.com/python-pathlib/
