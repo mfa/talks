@@ -16,7 +16,8 @@
 
 ** about pathlib
 
-os.path in better, cleaner und more fun to use.
+- os.path in better, cleaner und more fun to use.
+- Python 3.5+
 
 ** Examples
 
@@ -24,9 +25,9 @@ os.path in better, cleaner und more fun to use.
 from pathlib import Path
 
 base = Path("/tmp")
-print(filename.exists())
-print(filename.is_dir())
-print(filename.is_file())
+print(base.exists())
+print(base.is_dir())
+print(base.is_file())
 
 # instead of os.path.join:
 filename = base / "file.ext"
