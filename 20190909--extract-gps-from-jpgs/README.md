@@ -1,6 +1,6 @@
-## AllenNLP Intro
+## Lightning Talks - Extract GPS from JPGS using Python
 
-Talk at [machine learning group stuttgart](http://mlugs.de) 2019-03
+Talk at [Datenobservatorium](https://datenobservatorium.de) 2019-09-09
 
 
 ### Show slides
