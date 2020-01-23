@@ -1,0 +1,125 @@
+* Datasette
+
+Andreas Madsack (mfa)
+
+Python Meetup
+2020-01-24
+
+* ToC
+
+** About Datasette
+
+** Ecosystem
+
+** Three usage examples
+
+
+* Datasette
+
+** A tool for exploring and publishing data  :slide:
+
+** [[https://github.com/simonw/datasette][https://github.com/simonw/datasette]]  :slide:
+
+** in Python  :slide:
+
+** data is filebased (sqlite) - less complex hosting  :slide:
+
+** JSON Api
+
+* Some Examples
+
+** [[https://fivethirtyeight.datasettes.com/fivethirtyeight][https://fivethirtyeight.datasettes.com/fivethirtyeight]]
+
+** [[https://global-power-plants.datasettes.com/global-power-plants/global-power-plants?country_long=Germany][https://global-power-plants.datasettes.com/global-power-plants/global-power-plants?country_long=Germany]]
+
+* Powerplant image
+:PROPERTIES:
+:type:     full-screen-image
+:image:    file:./powerplant-screenshot-fullscreen.png
+:END:
+
+* Growing Ecosystem 1
+
+** sqlite-utils  :slide:
+
+#+BEGIN_SRC python
+dogs.insert_all([{
+    "id": 1,
+    "name": "Cleo",
+    "twitter": "cleopaws",
+    "age": 3,
+    "is_good_dog": True,
+}], pk="id", column_order=("id", "twitter", "name"))
+#+END_SRC
+
+** csvs-to-sqlite :slide:
+** db-to-sqlite
+*** postgresql and mysql to sqlite  :slide:
+
+** yaml-to-sqlite  :slide:
+
+** lots of different outputs
+
+*** datasette-template-sql
+*** datasette-render-html
+*** datasette-atom
+*** datasette-auth-github
+*** (a lot more)
+
+* Growing Ecosystem 2
+
+** converters of website data to sqlite
+
+*** github-to-sqlite
+*** twitter-to-sqlite
+*** google-takeout-to-sqlite
+*** inaturalist-to-sqlite
+*** goodreads-to-sqlite
+*** swarm-to-sqlite
+*** ...
+
+
+* Example 1
+
+** Website build by Simon Willison using only datasette: [[https://www.niche-museums.com/][https://www.niche-museums.com/]]
+
+** Example: [[https://www.niche-museums.com/browse/museums/48][https://www.niche-museums.com/browse/museums/48]]
+
+** Browse sqlite database: [[https://www.niche-museums.com/browse/museums][https://www.niche-museums.com/browse/museums]]
+
+
+* Example 2
+
+** Bundesbank bank data converterted to sqlite
+
+** Datasource: [[https://www.bundesbank.de/en/tasks/payment-systems/services/bank-sort-codes/download-bank-sort-codes-626218][https://www.bundesbank.de/en/tasks/payment-systems/services/bank-sort-codes/download-bank-sort-codes-626218]]
+
+** Datasource is either plain text or a xlsx file
+
+** Converter to sqlite: [[https://github.com/mfa/bundesbank-to-sqlite][https://github.com/mfa/bundesbank-to-sqlite]]
+
+** Livedemo: [[http://127.0.0.1:8001/blz/bundesbank_blz?city=Stuttgart][http://127.0.0.1:8001/blz/bundesbank_blz?city=Stuttgart]]
+
+* Example 3
+
+** [[https://meinsack.click][https://meinsack.click]] is an API for recyclable waste in Stuttgart
+
+** meinsack.click data converted to sqlite (no repository yet)
+
+** first version was converted using "db-to-sqlite", new version will use "sqlite-utils" and the Django ORM
+
+** The datastructure is quite a few tables. For better usability a VIEW is added.
+
+** Link to VIEW: [[http://127.0.0.1:8002/meinsack/pickupdate_street][http://127.0.0.1:8002/meinsack/pickupdate_street]]
+
+** Livedemo: [[http://127.0.0.1:8002/meinsack/pickupdate_street?street__exact=Ulmer+Stra%C3%9Fe&zipcode__exact=70327][http://127.0.0.1:8002/meinsack/pickupdate_street?street__exact=Ulmer+Stra%C3%9Fe&zipcode__exact=70327]]
+
+* next
+
+** host databases on [[https://data.meinsack.click][https://data.meinsack.click]]
+
+** release meinsack-to-sqlite (or add code to meinsack repository)
+
+** write an ical plugin (to replace meinsack.click-api)
+
+* thanks
