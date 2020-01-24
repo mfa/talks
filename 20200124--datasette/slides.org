@@ -98,6 +98,8 @@ dogs.insert_all([{
 
 ** Converter to sqlite: [[https://github.com/mfa/bundesbank-to-sqlite][https://github.com/mfa/bundesbank-to-sqlite]]
 
+** Code: [[https://github.com/mfa/bundesbank-to-sqlite/blob/master/bundesbank_to_sqlite/utils.py][https://github.com/mfa/bundesbank-to-sqlite/blob/master/bundesbank_to_sqlite/utils.py]]
+
 ** Livedemo: [[http://127.0.0.1:8001/blz/bundesbank_blz?city=Stuttgart][http://127.0.0.1:8001/blz/bundesbank_blz?city=Stuttgart]]
 
 * Example 3
@@ -123,3 +125,5 @@ dogs.insert_all([{
 ** write an ical plugin (to replace meinsack.click-api)
 
 * thanks
+
+Questions?
