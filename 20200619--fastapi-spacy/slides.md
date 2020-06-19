@@ -47,7 +47,7 @@ Python Meetup<br/>
 
 ## Demo
 
-- Code will be made public later: https://github.com/mfa/spacy-fastapi-demo
+- Code: https://github.com/mfa/spacy-fastapi-demo
 
 
 ---
