@@ -1,0 +1,4 @@
+jupyter
+torch~=1.6.0
+transformers
+RISE
